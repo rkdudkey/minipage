@@ -1,0 +1,228 @@
+
+
+* {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/*This is a nav part*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+}
+
+
+
+.logo {
+    padding: 0 20px;
+    text-align: center;
+    background-color: #4f6134;
+    height: 100px;
+    
+}
+
+#logo-img{
+    padding: 20px;
+    width: 60px;
+   
+}
+
+.list-product {
+    background-color: #7d9b5d;
+    height: 100px;
+    width: 100%;
+}
+
+.list, .list-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list {
+    padding: 0 30px;
+}
+
+.list a {
+    text-decoration: none;
+}
+
+.list a:hover li,.sign-in a:hover, .cart a:hover p{
+   color: rgb(16, 230, 16);
+}
+
+.item {
+    padding: 0 20px;
+}
+
+.search {
+    width: 100%;
+    
+}
+
+.search-box{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 0
+}
+
+.btn {
+    background-color:  #446418;
+    border: none;
+    width: 30px;
+    height: 32px;
+    position: absolute;
+}
+
+.search-icon, .img-cart {
+    filter: invert(1); 
+    width: 15px;  
+}
+
+.profile {
+    margin-top: 15px;
+    padding-right: 20px;
+    width: 100%
+}
+
+.sign-in {
+    float: right;
+}
+
+.cart {
+    clear:both;
+    float: right;
+}
+
+.img-cart{
+    width: 30px;
+    position: relative;
+    top: 6.5px;
+}
+
+/*This is a section part*/
+
+.section, .motel-section, .cottage-section, .hotel-section, .cabin-section {
+    background-image: url(./assets/images/sara-dubler-Koei_7yYtIo-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.motel-section {
+    background-image: url(./assets/images/sabeer-darr-mlBtmQHrrls-unsplash.jpg);
+}
+
+.cottage-section{
+    background-image: url(./assets/images/filip-urban-dl0305Iyamc-unsplash.jpg);
+}
+
+.hotel-section {
+    background-image: url(./assets/images/andreas-m-IJaPXY1tcYU-unsplash.jpg);
+}
+
+.cabin-section {
+    background-image: url(./assets/images/ryan-stone-rlGQoBwwC90-unsplash.jpg);
+
+}
+#title {
+    position: relative;
+    top: 20px;
+    padding: 30px;
+    margin: 0 auto;
+    color: #565656;
+    font-family: 'Pattaya', sans-serif;
+    border: 5px double #d3d4d1;
+    width: 30%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    z-index: 1;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/*Animation*/
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+  }
+
+.box-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #8ec7b7;
+    width: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 300px;
+}
+
+.destinations, .hotels, .activity{
+    width: 33%;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px double #565656;
+}
+
+.box-wrapper p {
+    font-size: 24px;
+    font-family: 'Satisfy', cursive;
+    color: 	#005262;
+    font-weight: 700;
+}
+
+/*This is a footer section*/
+
+.footer {
+    background-color: 	#565656;
+    height: 30vh;
+    position: relative;
+}
+
+.find-me {
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 0.5em;
+}
+
+.box-footer {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.copy{
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.social-icon{
+   font-size: 30px;
+}
+
+.social a:hover {
+    background-color:#446418;
+    box-shadow: rgb(141, 209, 163) 0px 22px 70px 4px;
+}
